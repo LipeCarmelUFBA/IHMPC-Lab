@@ -1,0 +1,5 @@
+slycot
+control
+cvxopt==1.2.0
+matplotlib==3.4.3
+quadprog==0.1.11
