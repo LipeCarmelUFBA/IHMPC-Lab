@@ -43,9 +43,6 @@ subject to:
 ```math
 \mathbf{y}_{\text{min}}\leq \mathbf{y}_{\text{sp},k}\leq\mathbf{y}_{\text{max}}, 
 ```
- $`aaaaaaaaaaa`$
- $`aaaaaaaaaaa`$
- 
 (assuming zone control) where $`\mathbf{y}(k+j|k)`$ is the output prediction of the model evaluated at time step  $`k+j`$ with information available from step $`k`$, $`\Delta \mathbf{u}`$ is the control action in the incremental form, $`\mathbf{x}^{\text{p}}`$ (p=s,in,un) are the states obtained from the Odloaks's canonical state-space, $`\boldsymbol{\delta}_{p,k}`$ (p=s,in,un) are slack variables applied to soften the terminal equality contraint 
  $`\mathbf{g}_{tc}`$. $`\mathbf{g}_{eco}`$ is a constraint included when input targes are applied. The bounds on the decision variables are definied by  $`\Delta \mathbf{u}_{\text{min}}`$, $`\Delta \mathbf{u}_{\text{max}}`$, $`\mathbf{u}_{\text{min}}`$, $`\mathbf{u}_{\text{max}}`$, $`\mathbf{y}_{\text{min}}`$, $`\mathbf{y}_{\text{max}}`$. $`V_{\delta,k}`$ is a term to penalize the slack usage. $`V_{eco,k}`$ is a term related to the economic formulation. $`\mathbf{Q}_y`$, $`\mathbf{R}`$ are weighting matrices.
 
