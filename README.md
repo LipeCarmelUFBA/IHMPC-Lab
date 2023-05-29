@@ -87,5 +87,3 @@ In order to find the simulation utilized by the paper associated with this CodeO
 8. D. D. Santana, M. A. F. Martins, D. Odloak, One-layer gradient-based MPC + RTO strategy for unstable processes: a case study of a CSTR system, Brazilian Journal of Chemical Engineering 37 (1) (2020) 173–188.  URL http://dx.doi.org/10.1007/s43153-020-00018-w.
 
 9. D. D. Santana, Economic and distributed model predictive control for non-stable processes : stability , feasibility , and integration, Ph.D. thesis, Universidade Federal da Bahia (2020).
-
-</font>
