@@ -60,7 +60,7 @@ The IHMPC-Lab is composed of three main components:
 
 ## 3 - Demonstrative Examples
 ---
-The IHMPCLab has a select set of examples, located in **Examples folder**, to demonstrate the module's capabilities through closed-loop simulations using both systems and controllers available in research papers. Running any example while using the **IHMPC-Lab** folder as the working directory will generate plot results at the **result** folder.
+The IHMPCLab has a select set of examples, located in **Examples folder**, to demonstrate the module's capabilities through closed-loop simulations using both systems and controllers available in research papers. Running any example while using the **IHMPC-Lab** folder as the working directory will generate plot results at the **results** folder.
 
 In order to find the simulation utilized by the paper associated with this project (publication pending), please refer to the script found at "/src/Examples/Unstable Systems/Optimizing Targets/Provided Inputs/CSTR.py". 
 
