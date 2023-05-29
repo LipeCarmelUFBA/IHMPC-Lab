@@ -5,7 +5,7 @@
 ## 1 - Introduction
 ---
 
-The IHMPC–Lab is a Python package to implement state-of-the-art stabilizing DMC-type MPC strategies of Odloak’s family of controllers. This control family focuses on infinite horizon stabilizing MPC controllers with the feasibility of the optimization problem at any time step. The main features are: (i) the stabilizing properties are enforced by slacked terminal constraints, which tackles infeasible optimization problem conditions, (ii) offset free control laws, (iii) application of a canonical state-space model based on the analytical form of the step response of the system, (iv) capability of integration of the control law with RTO (Real-Time Optimization) targets, (v) capability of assessing economic targets directly in the control law.
+The IHMPC–Lab (also available at: https://codeocean.com/capsule/6835153/tree) is a Python package to implement state-of-the-art stabilizing DMC-type MPC strategies of Odloak’s family of controllers. This control family focuses on infinite horizon stabilizing MPC controllers with the feasibility of the optimization problem at any time step. The main features are: (i) the stabilizing properties are enforced by slacked terminal constraints, which tackles infeasible optimization problem conditions, (ii) offset free control laws, (iii) application of a canonical state-space model based on the analytical form of the step response of the system, (iv) capability of integration of the control law with RTO (Real-Time Optimization) targets, (v) capability of assessing economic targets directly in the control law.
 
 The IHMPC-Lab supports the design of control laws for systems containing the following combinations of open-loop poles:
 + Stable [1,2,3]
@@ -60,11 +60,9 @@ The IHMPC-Lab is composed of three main components:
 
 ## 3 - Demonstrative Examples
 ---
-The IHMPCLab has a select set of examples, located in **Examples folder**, to demonstrate the module's capabilities through closed-loop simulations using both systems and controllers available in research papers. The file named "run" consists of a code to run each of these examples and save their results (see "results" section). The "run" file includes short introductory comments on the system and the controller utilized for each simulation.
+The IHMPCLab has a select set of examples, located in **Examples folder**, to demonstrate the module's capabilities through closed-loop simulations using both systems and controllers available in research papers. Running any example while using the **IHMPC-Lab** folder as the working directory will generate plot results at the **result** folder.
 
-It is possible to exclude examples from running by converting their lines in the "run" file into comments by adding "#" at the beginning of the line.
-
-In order to find the simulation utilized by the paper associated with this CodeOcean capsule, please refer to the script found at "/src/Examples/Unstable Systems/Optimizing Targets/Provided Inputs/CSTR.py". This particular example is called at line 84 of the "run" file.
+In order to find the simulation utilized by the paper associated with this project (publication pending), please refer to the script found at "/src/Examples/Unstable Systems/Optimizing Targets/Provided Inputs/CSTR.py". 
 
 # References
 
