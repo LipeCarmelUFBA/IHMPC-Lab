@@ -64,7 +64,7 @@ The IHMPCLab has a select set of examples, located in **Examples folder**, to de
 
 It is possible to exclude examples from running by converting their lines in the "run" file into comments by adding "#" at the beginning of the line.
 
-In order to find the simulation utilized by the paper associated with this CodeOcean capsule, please refer to the script found at "/code/Examples/Unstable Systems/Optimizing Targets/Provided Inputs/CSTR.py". This particular example is called at line 84 of the "run" file.
+In order to find the simulation utilized by the paper associated with this CodeOcean capsule, please refer to the script found at "/src/Examples/Unstable Systems/Optimizing Targets/Provided Inputs/CSTR.py". This particular example is called at line 84 of the "run" file.
 
 # References
 
