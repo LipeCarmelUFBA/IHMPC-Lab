@@ -64,6 +64,24 @@ The IHMPCLab has a select set of examples, located in **Examples folder**, to de
 
 In order to find the simulation utilized by the paper associated with this project (publication pending), please refer to the script found at "/src/Examples/Unstable Systems/Optimizing Targets/Provided Inputs/CSTR.py". 
 
+## 4 - Getting Started
+---
+### Setting up a Python 3.8.1 environment:
+Install and open Miniconda3. Run:
+```
+conda install conda
+conda create --name py381 python=3.8.1
+conda activate py381
+```
+### Installing dependencies
+According to Slycot's documentation (commit #294eae0) the easiest way to install slycot is using conda.
+Every other dependency can also be installed with conda.
+Therefore, we recommend running:
+```
+cd [full path to the IHMPC-Lab directory]
+conda install -c conda-forge --file requirements.txt
+```
+
 # References
 
 ---
