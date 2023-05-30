@@ -67,7 +67,8 @@ In order to find the simulation utilized by the paper associated with this proje
 ## 4 - Getting Started
 ---
 ### Setting up a Python 3.8.1 environment:
-Install and open Miniconda3. Run:
+Install and open Miniconda3.
+Run:
 ```
 conda install conda
 conda create --name py381 python=3.8.1
