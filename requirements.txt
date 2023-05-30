@@ -1,5 +1,5 @@
 slycot==0.5.4
-control==0.9.0
-cvxopt==1.2.0
-matplotlib==3.4.3
+control==0.9.3.post2
 quadprog==0.1.11
+matplotlib==3.4.3
+cvxopt==1.3.1
