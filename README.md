@@ -5,7 +5,7 @@
 ## 1 - Introduction
 ---
 
-The IHMPC–Lab is a Python package to implement state-of-the-art stabilizing DMC-type MPC strategies of Odloak’s family of controllers. This control family focuses on infinite horizon stabilizing MPC controllers with the feasibility of the optimization problem at any time step. The main features are: (i) the stabilizing properties are enforced by slacked terminal constraints, which tackles infeasible optimization problem conditions, (ii) offset free control laws, (iii) application of a canonical state-space model based on the analytical form of the step response of the system, (iv) capability of integration of the control law with RTO (Real-Time Optimization) targets, (v) capability of assessing economic targets directly in the control law.
+The IHMPC–Lab (also available at: https://codeocean.com/capsule/6835153/tree) is a Python package to implement state-of-the-art stabilizing DMC-type MPC strategies of Odloak’s family of controllers. This control family focuses on infinite horizon stabilizing MPC controllers with the feasibility of the optimization problem at any time step. The main features are: (i) the stabilizing properties are enforced by slacked terminal constraints, which tackles infeasible optimization problem conditions, (ii) offset free control laws, (iii) application of a canonical state-space model based on the analytical form of the step response of the system, (iv) capability of integration of the control law with RTO (Real-Time Optimization) targets, (v) capability of assessing economic targets directly in the control law.
 
 The IHMPC-Lab supports the design of control laws for systems containing the following combinations of open-loop poles:
 + Stable [1,2,3]
@@ -43,9 +43,6 @@ subject to:
 ```math
 \mathbf{y}_{\text{min}}\leq \mathbf{y}_{\text{sp},k}\leq\mathbf{y}_{\text{max}}, 
 ```
- $`aaaaaaaaaaa`$
- $`aaaaaaaaaaa`$
- 
 (assuming zone control) where $`\mathbf{y}(k+j|k)`$ is the output prediction of the model evaluated at time step  $`k+j`$ with information available from step $`k`$, $`\Delta \mathbf{u}`$ is the control action in the incremental form, $`\mathbf{x}^{\text{p}}`$ (p=s,in,un) are the states obtained from the Odloaks's canonical state-space, $`\boldsymbol{\delta}_{p,k}`$ (p=s,in,un) are slack variables applied to soften the terminal equality contraint 
  $`\mathbf{g}_{tc}`$. $`\mathbf{g}_{eco}`$ is a constraint included when input targes are applied. The bounds on the decision variables are definied by  $`\Delta \mathbf{u}_{\text{min}}`$, $`\Delta \mathbf{u}_{\text{max}}`$, $`\mathbf{u}_{\text{min}}`$, $`\mathbf{u}_{\text{max}}`$, $`\mathbf{y}_{\text{min}}`$, $`\mathbf{y}_{\text{max}}`$. $`V_{\delta,k}`$ is a term to penalize the slack usage. $`V_{eco,k}`$ is a term related to the economic formulation. $`\mathbf{Q}_y`$, $`\mathbf{R}`$ are weighting matrices.
 
@@ -63,11 +60,28 @@ The IHMPC-Lab is composed of three main components:
 
 ## 3 - Demonstrative Examples
 ---
-The IHMPCLab has a select set of examples, located in **Examples folder**, to demonstrate the module's capabilities through closed-loop simulations using both systems and controllers available in research papers. The file named "run" consists of a code to run each of these examples and save their results (see "results" section). The "run" file includes short introductory comments on the system and the controller utilized for each simulation.
+The IHMPCLab has a select set of examples, located in **Examples folder**, to demonstrate the module's capabilities through closed-loop simulations using both systems and controllers available in research papers. Running any example while using the **IHMPC-Lab** folder as the working directory will generate plot results at the **results** folder.
 
-It is possible to exclude examples from running by converting their lines in the "run" file into comments by adding "#" at the beginning of the line.
+In order to find the simulation utilized by the paper associated with this project (publication pending), please refer to the script found at "/src/Examples/Unstable Systems/Optimizing Targets/Provided Inputs/CSTR.py". 
 
-In order to find the simulation utilized by the paper associated with this CodeOcean capsule, please refer to the script found at "/code/Examples/Unstable Systems/Optimizing Targets/Provided Inputs/CSTR.py". This particular example is called at line 84 of the "run" file.
+## 4 - Getting Started
+---
+### Setting up a Python 3.8.1 environment:
+Install and open Miniconda3.
+Run:
+```
+conda install conda
+conda create --name py381 python=3.8.1
+conda activate py381
+```
+### Installing dependencies
+According to Slycot's documentation (commit #294eae0) the easiest way to install slycot is using conda.
+Every other dependency can also be installed with conda.
+Therefore, we recommend running:
+```
+cd [full path to the IHMPC-Lab directory]
+conda install -c conda-forge --file requirements.txt
+```
 
 # References
 
@@ -90,5 +104,3 @@ In order to find the simulation utilized by the paper associated with this CodeO
 8. D. D. Santana, M. A. F. Martins, D. Odloak, One-layer gradient-based MPC + RTO strategy for unstable processes: a case study of a CSTR system, Brazilian Journal of Chemical Engineering 37 (1) (2020) 173–188.  URL http://dx.doi.org/10.1007/s43153-020-00018-w.
 
 9. D. D. Santana, Economic and distributed model predictive control for non-stable processes : stability , feasibility , and integration, Ph.D. thesis, Universidade Federal da Bahia (2020).
-
-</font>

@@ -4,8 +4,6 @@
 # State-space and control formulation:
 # M. A. F. Martins, D. Odloak, A robustly stabilizing model predictive control strategy of stable and unstable processes, Automatica 67 (2016) 132–143. URL http://dx.doi.org/10.1016/j.automatica.2016.01.046
 
-# A more detailed example can be found at: https://colab.research.google.com/drive/18qOZcHWGGaJy6fijo16Z7dmx12o7R0UI
-
 import os
 from control import tf
 from src.ihmpclab.components import Model, IHMPC, ClosedLoop
